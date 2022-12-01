@@ -82,3 +82,11 @@ final class Route {
   }
 
 }
+
+Route::setGroup('api');
+
+Route::get('ramais-status', function() {
+  echo 'teste';
+}, 'ramais.status');
+
+Route::unsetGroup();
